@@ -1,1 +1,53 @@
-//background color changer
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #172033;
+  background: #ffffff;
+  transition: background-color 0.25s ease;
+}
+
+.color-panel {
+  width: min(90vw, 430px);
+  padding: 32px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(23, 32, 51, 0.16);
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+}
+
+#color-value {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #166534;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #14532d;
+}
