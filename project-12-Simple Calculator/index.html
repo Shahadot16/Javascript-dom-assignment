@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Simple Calculator</h1>
+    <main class="calculator-panel">
+        <h1>Simple Calculator</h1>
+
+        <div class="input-group">
+            <label for="first-number">First Number</label>
+            <input id="first-number" type="number" placeholder="Enter first number">
+        </div>
+
+        <div class="input-group">
+            <label for="second-number">Second Number</label>
+            <input id="second-number" type="number" placeholder="Enter second number">
+        </div>
+
+        <div class="button-grid">
+            <button type="button" data-operation="add">Add</button>
+            <button type="button" data-operation="subtract">Subtract</button>
+            <button type="button" data-operation="multiply">Multiply</button>
+            <button type="button" data-operation="divide">Divide</button>
+        </div>
+
+        <p id="result" class="result-screen">Result: 0</p>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

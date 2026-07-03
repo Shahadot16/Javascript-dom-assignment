@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Student Result Calculator</h1>
+    <main class="result-panel">
+        <h1>Student Result Calculator</h1>
+
+        <div class="input-group">
+            <label for="bangla">Bangla</label>
+            <input id="bangla" type="number" min="0" max="100" placeholder="Bangla marks">
+        </div>
+
+        <div class="input-group">
+            <label for="english">English</label>
+            <input id="english" type="number" min="0" max="100" placeholder="English marks">
+        </div>
+
+        <div class="input-group">
+            <label for="math">Math</label>
+            <input id="math" type="number" min="0" max="100" placeholder="Math marks">
+        </div>
+
+        <button id="calculate-button" type="button">Calculate Result</button>
+
+        <p id="result-output" class="result-output">Total: 0, Average: 0, Grade: -</p>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Show Hide Password</h1>
+    <main class="password-panel">
+        <h1>Show / Hide Password</h1>
+
+        <label for="password-input">Password</label>
+        <input id="password-input" type="password" placeholder="Enter your password">
+
+        <label class="toggle-row" for="show-password">
+            <input id="show-password" type="checkbox">
+            <span>Show Password</span>
+        </label>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

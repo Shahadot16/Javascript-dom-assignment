@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gradient Background Generator</h1>
+    <main class="gradient-panel">
+        <h1>Gradient Background Generator</h1>
+
+        <div class="color-preview">
+            <span id="color-one" class="color-chip">#ff0000</span>
+            <span id="color-two" class="color-chip">#00ff00</span>
+        </div>
+
+        <p id="css-code" class="css-code">background: linear-gradient(to right, #ff0000, #00ff00);</p>
+        <button id="generate-button" type="button">Generate Gradient</button>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
